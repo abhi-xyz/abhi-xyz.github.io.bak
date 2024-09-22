@@ -1,0 +1,534 @@
+/* Catppuccin Mocha Color Palette */
+:root {
+    --white: hsl(220deg, 23%, 95%);
+    --white1: hsl(220deg, 22%, 92%);
+    --white2: hsl(220deg, 21%, 89%);
+    --code-bg: hsl(232deg, 23%, 18%);
+    --Rosewater: hsl(10deg, 56%, 91%);
+    --Rosewater1: hsl(10deg, 58%, 90%);
+    --Rosewater2: hsl(10deg, 57%, 88%);
+    --Flamingo: hsl(0deg, 59%, 88%);
+    --Flamingo1: hsl(0deg, 58%, 86%);
+    --Flamingo2: hsl(0deg, 59%, 84%);
+    --pink: hsl(316deg, 72%, 86%);
+    --pink1: hsl(316deg, 74%, 85%);
+    --pink2: hsl(316deg, 73%, 84%);
+    --Mauve: hsl(267deg, 84%, 81%);
+    --Mauve1: hsl(267deg, 83%, 80%);
+    --Mauve2: hsl(277deg, 59%, 76%);
+    --red: hsl(343deg, 81%, 75%);
+    --red1: hsl(351deg, 74%, 73%);
+    --red2: hsl(359deg, 68%, 71%);
+    --Maroon: hsl(350deg, 65%, 77%);
+    --Maroon1: hsl(355deg, 71%, 77%);
+    --Maroon2: hsl(358deg, 66%, 76%);
+    --Peach: hsl(23deg, 92%, 75%);
+    --Peach1: hsl(21deg, 86%, 73%);
+    --Peach2: hsl(20deg, 79%, 70%);
+    --yellow: hsl(41deg, 86%, 83%);
+    --yellow1: hsl(40deg, 70%, 78%);
+    --yellow2: hsl(40deg, 62%, 73%);
+    --green: hsl(115deg, 54%, 76%);
+    --green1: hsl(105deg, 48%, 72%);
+    --green2: hsl(96deg, 44%, 68%);
+    --teal: hsl(170deg, 57%, 73%);
+    --teal1: hsl(171deg, 47%, 69%);
+    --teal2: hsl(172deg, 39%, 65%);
+    --sky: hsl(189deg, 71%, 73%);
+    --sky1: hsl(189deg, 59%, 73%);
+    --sky2: hsl(189deg, 48%, 73%);
+    --sapphire: hsl(199deg, 76%, 69%);
+    --sapphire1: hsl(199deg, 66%, 69%);
+    --sapphire2: hsl(199deg, 55%, 69%);
+    --blue: hsl(217deg, 92%, 76%);
+    --blue1: hsl(220deg, 83%, 75%);
+    --blue2: hsl(222deg, 74%, 74%);
+    --lavender: hsl(232deg, 97%, 85%);
+    --lavender1: hsl(234deg, 82%, 85%);
+    --lavender2: hsl(239deg, 66%, 84%);
+    --text: hsl(226deg, 64%, 88%);
+    --subtext1: hsl(227deg, 35%, 80%);
+    --subtext0: hsl(228deg, 24%, 72%);
+    --overlay2: hsl(228deg, 17%, 64%);
+    --overlay1: hsl(230deg, 13%, 55%);
+    --overlay0: hsl(231deg, 11%, 47%);
+    --surface2: hsl(233deg, 12%, 39%);
+    --surface1: hsl(234deg, 13%, 31%);
+    --surface0: hsl(237deg, 16%, 23%);
+    --base2: hsl(229deg, 19%, 23%);
+    --base1: hsl(232deg, 23%, 18%);
+    --base: hsl(240deg, 21%, 15%);
+    --mantle: hsl(240deg, 21%, 12%);
+    --crust: hsl(240deg, 23%, 9%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font-family: Arial;
+    padding: 20px;
+    background: var(--mantle);
+    Color: var(--text);
+}
+p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+h1 {
+    font-family: 'Crete Round', serif;
+    font-weight: bold;
+    Color: var(--text);
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-weight: 300;
+    Color: var(--text);
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 30px;
+    Color: var(--text);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 24px;
+    Color: var(--text);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+h5 {
+    font-size: 15px;
+    Color: var(--text);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: var(--blue2);
+}
+a:hover {
+    color: var(--sky);
+}
+strong {
+    font-weight: bold;
+}
+small {
+    font-size: 13px;
+    color: var(--subtext0);
+    font-style: italic;
+}
+.clear {
+    clear: both;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+}
+/* Section 1: Header */
+
+header {
+    height: 120px;
+}
+header h1 {
+    float: left;
+    margin-top: 32px;
+}
+header h1 .color {
+    color: var(--blue);
+}
+header nav {
+    flex: 1; /* Allow nav to take up available space */
+    display: flex;
+    justify-content: flex-end; /* Align navigation items to the right */
+    align-items: center; /* Center nav items vertically */
+}
+header nav ul li {
+    float: left;
+    display: inline-block;
+    margin-top: 50px;
+}
+header nav ul li a {
+    color: var(--subtext0);
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-right: 20px;
+}
+
+    #mobile-nav {
+        display: none; /* Show mobile navigation on smaller screens */
+    }
+
+
+@media (max-width: 900px) {
+    header {
+    height: 100px;
+    }
+    header h1 {
+        font-size: 2rem;
+    margin-top: 22px;
+    }
+    header nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: block; /* Show mobile navigation on smaller screens */
+        background-color: var(--base1); /* Add background color */
+        padding: 10px 0;
+    }
+
+    #mobile-nav ul {
+        list-style: none; /* Remove bullet points */
+        padding: 0;
+        margin: 0;
+        text-align: center; /* Center the mobile menu items */
+    }
+
+    #mobile-nav ul li {
+        margin: 10px 0; /* Add space between menu items */
+    }
+
+    #mobile-nav ul li a {
+        color: var(--subtext0);
+        text-transform: uppercase;
+        font-weight: bold;
+        display: block;
+        padding: 5px 0;
+    }
+
+
+}
+@media (max-width: 450px) {
+    header {
+    height: 60px;
+    }
+    header h1 {
+        font-size: 1rem;
+    margin-top: 12px;
+    }
+    header nav {
+        display: none;
+    }
+    #mobile-nav ul li a {
+        font-size: 0.8rem;
+        padding: 2px 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hero-image {
+    height: auto; /* Allow the height to adjust dynamically */
+    background: var(--surface0) no-repeat center;
+    padding-top: 7px;
+    padding-bottom: 60px;
+    padding-right:5%;
+    padding-left:5%;
+    text-align: center; /* Center content */
+}
+
+#hero-image h2 {
+    margin: 10vh 0 5vh 0; /* Use relative units for vertical spacing */
+    font-size: 4rem; /* Adjust font size to be responsive */
+}
+
+.button-1 {
+    display: block;
+    text-align: center;
+    background: var(--surface2);
+    border-radius: 3px;
+    color: var(--text);
+    width: 80%; /* Make the button width relative */
+    max-width: 180px; /* Constrain max width */
+    height: auto; /* Allow height to adjust dynamically */
+    font-size: 1.25rem; /* Use relative font size */
+    line-height: normal; /* Remove line-height for better responsiveness */
+    padding: 12px 0; /* Add padding for better button sizing */
+    margin: 0 auto;
+}
+
+.button-1:hover {
+    background-color: var(--lavender);
+    color: var(--crust);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #hero-image h2 {
+        margin: 8vh 0 4vh 0; /* Adjust margins for smaller screens */
+        font-size: 1.5rem; /* Reduce font size */
+    }
+
+    .button-1 {
+        width: 90%; /* Increase button width for smaller screens */
+        font-size: 1rem; /* Reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    #hero-image h2 {
+        margin: 6vh 0 3vh 0; /* Further reduce margins for smaller screens */
+        font-size: 1.25rem; /* Reduce font size */
+    }
+
+    .button-1 {
+        width: 95%; /* Make the button take most of the screen width */
+        font-size: 0.875rem; /* Further reduce font size */
+    }
+}
+
+
+
+#primary-content {
+    background-color: var(--base);
+    padding: 60px 5%;  /* Added 5% padding for better responsiveness */
+    text-align: center;
+}
+
+#primary-content p {
+    padding: 30px 0;   /* Reduced padding for better responsiveness */
+    text-align: center;
+    max-width: 45rem;  /* Maintain max-width */
+    margin: 0 auto;    /* Center the element */
+}
+
+#primary-content h3 {
+    margin: 0 auto 20px auto;
+    max-width: 100%;   /* Use max-width instead of fixed width */
+    border-bottom: 1px solid var(--surface2);
+    padding: 0 0 20px 0;
+}
+
+#primary-content a img {
+    margin: 20px 0;
+    max-width: 100%;   /* Ensure images are responsive */
+    height: auto;      /* Maintain aspect ratio */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    #primary-content {
+        padding: 40px 5%;
+    }
+
+    #primary-content p {
+        padding: 20px 0;
+        max-width: 90%;  /* Reduce max-width on smaller screens */
+    }
+
+    #primary-content h3 {
+        margin: 0 auto 15px auto;
+        max-width: 90%;  /* Reduce max-width on smaller screens */
+    }
+}
+
+#secondary-content {
+    padding: 60px 0;
+    text-align: center;
+}
+#secondary-content article {
+    width: 460px;
+    height: 270px;
+    float: left;
+    background-color: var(--base);
+}
+#secondary-content article:first-child {
+    margin-right: 20px;
+}
+#secondary-content article .overlay {
+    background: var(--surface0);
+    height: 230px;
+    width: 190px;
+    padding: 20px;
+}
+article h4 {
+    border-bottom: 1px solid var(--surface2);
+    padding-bottom: 20px;
+}
+.more-link {
+    border-radius: 3px;
+    background-color: var(--surface0);
+    color: var(--blue);
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+.more-link:hover {
+    background-color: var(--lavender);
+    color: var(--crust);
+}
+#cta {
+    padding: 60px 0;
+    text-align: center;
+    max-width: 45rem; /* Set max-width */
+    margin: 0 auto;   /* Center the element */
+}
+#cta h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 400px;
+    border-bottom: 1px solid var(--surface2);
+    padding: 0 0 20px 0;
+}
+
+
+.button-2 {
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    background-color: var(--surface0);
+    color: var(--blue);
+    border-radius: 3px;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+}
+.button-2:hover {
+    background-color: var(--lavender);
+    color: var(--crust);
+}
+footer {
+    padding: 60px 5%;
+    background-color: var(--base1);
+}
+#footer-info {
+    width: 75%;
+    float: left;
+    margin-top: 10px;
+}
+#footer-links {
+    width: 25%;
+    float: left;
+}
+#footer-links ul {
+    width: 100%;
+    float: left;
+    margin-left: 20px;
+}
+#footer-links ul li {
+    margin: 10px 0;
+    list-style-type: none;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  #footer-info, #footer-links {
+    width: 100%;
+    padding: 0;
+  }
+#footer-links ul {
+    width: 100%;
+    float: left;
+    margin-left: 0px;
+        padding-left: 5%;
+}
+
+
+}
+
+
+
+
+
+
+/* ---------------------- */
+/* -- Articles section -- */
+/* ---------------------- */
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: var(--base);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background: var(--surface1);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.intro-card {
+  background-color: var(--mantle);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: var(--base);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--base);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
