@@ -51,8 +51,8 @@ pub fn header() -> Html {
                         <ul>
                             <li><Link<Route> to={Route::Home}>{ "Home" }</Link<Route>></li>
                             <li><Link<Route> to={Route::Portfolio}>{ "Portfolio" }</Link<Route>></li>
-                            <li><Link<Route> to={Route::Contact}>{ "Contact" }</Link<Route>></li>
                             <li><Link<Route> to={Route::ArticlesRoute}>{ "Articles" }</Link<Route>></li>
+                            <li><Link<Route> to={Route::Contact}>{ "Contact" }</Link<Route>></li>
                         </ul>
                     </nav>
                 </div>
@@ -62,8 +62,8 @@ pub fn header() -> Html {
                 <ul>
                     <li><Link<Route> to={Route::Home}>{ "Home" }</Link<Route>></li>
                     <li><Link<Route> to={Route::Portfolio}>{ "Portfolio" }</Link<Route>></li>
-                    <li><Link<Route> to={Route::Contact}>{ "Contact" }</Link<Route>></li>
                     <li><Link<Route> to={Route::ArticlesRoute}>{ "Articles" }</Link<Route>></li>
+                    <li><Link<Route> to={Route::Contact}>{ "Contact" }</Link<Route>></li>
                 </ul>
             </nav>
         </div>

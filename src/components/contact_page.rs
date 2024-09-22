@@ -1,6 +1,4 @@
 use crate::home_page::{Footer, Header};
-use crate::Route;
-use ::yew_router::prelude::*;
 use yew::prelude::*;
 
 #[function_component(Contact)]

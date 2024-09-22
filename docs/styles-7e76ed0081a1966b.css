@@ -76,6 +76,7 @@ body {
     Color: var(--text);
 }
 p {
+    padding: 10px;
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -114,6 +115,7 @@ h5 {
     Color: var(--text);
     font-weight: bold;
     text-transform: uppercase;
+    padding: 10px;
 }
 a {
     text-decoration: none;
