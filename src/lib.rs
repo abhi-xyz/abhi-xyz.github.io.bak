@@ -27,12 +27,15 @@ pub enum ArticlesRoute {
     Articles,
     #[at("/articles/yew-website")]
     YewWebsite,
+    #[at("/articles/yew-rust")]
+    YewRust,
     #[not_found]
     #[at("/articles/404")]
     NotFound,
 }
 mod components;
 
+use crate::components::articles::yew_rust::YewRust;
 use crate::components::articles_page;
 use crate::components::contact_page;
 use crate::components::home_page;
@@ -56,6 +59,7 @@ fn switch_settings(route: ArticlesRoute) -> Html {
     match route {
         ArticlesRoute::Post { id } => html! {<p>{format!("You are looking at Post {}", id)}</p>},
         ArticlesRoute::YewWebsite => html! {<yew_website::YewWebsite />},
+        ArticlesRoute::YewRust => html! {<YewRust />},
         ArticlesRoute::Articles => html! {<articles_page::Articles />},
         ArticlesRoute::NotFound => html! {<Redirect<Route> to={Route::NotFound}/>},
     }
