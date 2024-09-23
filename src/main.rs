@@ -1,5 +1,5 @@
-use wasm::switch;
-use wasm::Route;
+use my_website::switch;
+use my_website::Route;
 use yew::prelude::*;
 use yew_router::prelude::*;
 

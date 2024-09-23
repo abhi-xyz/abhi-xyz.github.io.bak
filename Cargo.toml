@@ -1,8 +1,20 @@
 [package]
-name = "wasm"
+name = "my-website"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
 yew = { version = "0.21.0", features = ["csr"] }
 yew-router = "0.18.0"
+
+[profile.release]
+# less code to include into binary
+panic = 'abort'
+# optimization over all codebase ( better optimization, slower build )
+codegen-units = 1
+# optimization for size ( more aggressive )
+opt-level = 'z'
+# optimization for size
+# opt-level = 's'
+# link time optimization using using whole-program analysis
+lto = true
