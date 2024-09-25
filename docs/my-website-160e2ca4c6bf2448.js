@@ -874,15 +874,15 @@ function __wbg_get_imports() {
     imports.wbg.__wbg_removeAttribute_c80e298b60689065 = function() { return handleError(function (arg0, arg1, arg2) {
         getObject(arg0).removeAttribute(getStringFromWasm0(arg1, arg2));
     }, arguments) };
-    imports.wbg.__wbindgen_closure_wrapper418 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper417 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 15, __wbg_adapter_40);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper1596 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper1652 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 15, __wbg_adapter_43);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper2557 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper2617 = function(arg0, arg1, arg2) {
         const ret = makeClosure(arg0, arg1, 56, __wbg_adapter_46);
         return addHeapObject(ret);
     };
