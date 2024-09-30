@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-develop
-
-trunk build --release
+develop && trunk build --release
 
 rm -r docs
 cp -r dist docs
