@@ -4,4 +4,5 @@ pub mod home_page;
 pub mod portfolio_page;
 pub mod yew_website;
 
+pub mod art;
 pub mod articles;
