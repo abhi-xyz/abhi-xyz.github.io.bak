@@ -275,7 +275,7 @@ pub fn test_content() -> Html {
                     <div class="overlay">
                         <h4>{ "Articles on Rust" }</h4>
                         <p>{ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt nam." }</p>
-                        <a href="#" class="more_link_test">{ "Go to index" }</a>
+                        <a href="#" class="more_link">{ "Go to index" }</a>
                     </div>
                 <div class="clear"></div>
             </div>

@@ -13,9 +13,9 @@ pub fn navigation_menu() -> Html {
 
     html!(
             <>
-            /* -------------------------------------------------------------------------------------------------- */
-        <div class="navigation-header">
-            <header class="desktop-header">
+            /* ------------------------------------------------------ */
+        <div class="header_navigation">
+            <header class="header_desktop">
                 <nav class="navigation-desktop">
                           <h1 class="desktop-navigation-heading">{ "ABHINANDH S" }<span class="color">{ "." }</span></h1>
                         <ul class="desktop-nav-list">
@@ -45,7 +45,7 @@ pub fn navigation_menu() -> Html {
                         </nav>
     */
         </div>
-        /* -------------------------------------------------------------------------------------------------- */
+        /* -------------------------------------------------------- */
             </>
             )
 }

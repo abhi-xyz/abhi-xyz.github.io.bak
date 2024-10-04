@@ -21,6 +21,8 @@ pub enum Route {
 
 #[derive(Clone, Routable, PartialEq)]
 pub enum ArticlesRoute {
+    #[at("/articles/test")]
+    Test,
     #[at("/articles/post/:id")]
     Post { id: String },
     #[at("/articles")]
@@ -42,6 +44,7 @@ use crate::components::articles::yew_rust::YewRust;
 use crate::components::articles_page;
 use crate::components::contact_page;
 use crate::components::home_page;
+use crate::components::nav_test;
 use crate::components::portfolio_page;
 use crate::components::yew_website;
 
@@ -63,6 +66,7 @@ fn switch_settings(route: ArticlesRoute) -> Html {
         ArticlesRoute::Post { id } => html! {<p>{format!("You are looking at Post {}", id)}</p>},
         ArticlesRoute::YewWebsite => html! {<yew_website::YewWebsite />},
         ArticlesRoute::YewRust => html! {<YewRust />},
+        ArticlesRoute::Test => html! {<nav_test::Portfolio />},
         ArticlesRoute::ArtGallary => html! {<ArtGallary />},
         ArticlesRoute::Articles => html! {<articles_page::Articles />},
         ArticlesRoute::NotFound => html! {<Redirect<Route> to={Route::NotFound}/>},

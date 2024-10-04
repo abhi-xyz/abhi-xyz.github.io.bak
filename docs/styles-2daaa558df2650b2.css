@@ -391,6 +391,7 @@ header nav ul li a {
 #secondary-content {
     padding: 60px 0;
     text-align: center;
+    font-family: 'Cairo', sans-serif;
 }
 #secondary-content article {
     width: 460px;
