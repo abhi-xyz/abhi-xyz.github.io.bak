@@ -72,8 +72,9 @@ body {
     font: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     font-family: Arial;
     padding: 0px;
-    background-image: radial-gradient(circle at 80% 80%, #e52e71 10px, var(--base), var(--mantle));
+    background-image: radial-gradient(circle at 80% 110%, #e52e71 10px, var(--base), var(--mantle));
     /* background: var(--mantle); */
+    background-attachment: fixed; /* This makes the background fixed */
     Color: var(--text);
 }
 
@@ -181,7 +182,7 @@ header {
 }
 header h1 {
     float: left;
-    margin-top: 32px;
+    margin-top: 22px;
 }
 header h1 .color {
     color: var(--cherryRed);
