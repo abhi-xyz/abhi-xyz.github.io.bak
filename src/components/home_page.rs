@@ -23,7 +23,7 @@ pub fn home_page() -> Html {
                     <div class="overlay">
                         <h4>{ "Articles on Rust" }</h4>
                         <p>{ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt nam." }</p>
-                        <a href="#" class="more-link">{ "Go to index" }</a>
+                        <a href="#" class="more_link">{ "Go to index" }</a>
                     </div>
                 <div class="clear"></div>
             </div>
@@ -32,7 +32,7 @@ pub fn home_page() -> Html {
                 <div class="wrapper">
                     <h3>{ "View My Work" }</h3>
                     <p>{ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt. Nam ultricies odio ac neque suscipit volutpat. Ut dictum adipiscing felis sed malesuada. Integer porta sem nec nibh hendrerit imperdiet." }</p>
-                    <a href="#" class="button-2">{ "Get Started" }</a>
+                    <a href="#" class="more_link">{ "Get Started" }</a>
                 </div>
             </div>
     <Footer />

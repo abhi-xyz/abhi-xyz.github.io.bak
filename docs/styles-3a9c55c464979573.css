@@ -410,17 +410,6 @@ article h4 {
     border-bottom: 1px solid var(--surface2);
     padding-bottom: 20px;
 }
-.more-link {
-    border-radius: 3px;
-    background-color: var(--base2);
-    color: var(--cherryRed);
-    padding: 6px 20px;
-    border-radius: 3px;
-}
-.more-link:hover {
-    background-color: var(--lavender);
-    color: var(--crust);
-}
 #cta {
     padding: 60px 0;
     text-align: center;
@@ -1437,125 +1426,29 @@ ul {
 
 
 /* -------------------------------------------------------- */
-/* -- Animated Round Corner Button ------------------------ */
+/* NOTE: WIP: Animated Round Corner link ------------------ */
 /* -------------------------------------------------------- */
 
-.pf-button3 {
-  --black-700: hsla(0 0% 12% / 1);
-  --border_radius: 9999px;
-  --transtion: 0.3s ease-in-out;
-  --offset: 2px;
+.more_link {
+    --black-700: hsla(0 0% 12% / 1);
 
-  cursor: pointer;
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  transform-origin: center;
-
-  padding: 1rem 2rem;
-  background-color: transparent;
-
-  border: none;
-  border-radius: var(--border_radius);
-  transform: scale(calc(1 + (var(--active, 0) * 0.1)));
-
-  transition: transform var(--transtion);
+    color: var(--text);
+    background-color: var(--black-700);
+    border: none;
+    text-decoration: none;
+    border-radius: 9999px;
+    padding: 1rem 2rem;
+    transition: 0.3s ease-in-out;
+    box-shadow: inset 0 0.5px #e52e71,
+        inset 0 -1px 2px 0 hsl(0, 0%, 0%),
+        0px 4px 10px -4px hsla(0 0% 0% / 0.5);
 }
+.more_link::before {
 
-.pf-button3::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 100%;
-  height: 100%;
-  background-color: var(--black-700);
-
-  border-radius: var(--border_radius);
-  box-shadow: inset 0 0.5px #e52e71, inset 0 -1px 2px 0 hsl(0, 0%, 0%),
-    0px 4px 10px -4px hsla(0 0% 0% / calc(1 - var(--active, 0)));
-
-  transition: all var(--transtion);
-  z-index: 0;
 }
-
-
-.pf-button3:active {
-  transform: scale(1);
+.more_link:hover {
+    padding: 1rem 3rem;
 }
-
-.pf-button3 .pf_dots_border3 {
-  --size_border: calc(100% + 2px);
-
-  overflow: hidden;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: var(--size_border);
-  height: var(--size_border);
-  background-color: transparent;
-
-  border-radius: var(--border_radius);
-  z-index: -10;
-}
-
-.pf-button3 .pf_dots_border3::before {
-  content: "";
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform-origin: left;
-  transform: rotate(0deg);
-
-  width: 100%;
-  height: 2rem;
-  background-color: #e52e71;
-
-  mask: linear-gradient(transparent 0%, white 120%);
-  animation: rotate 2s linear infinite;
-}
-
-@keyframes rotate {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-.pf-button3 .text_button {
-  position: relative;
-  z-index: 10;
-
-  background-image: linear-gradient(
-    90deg,
-    var(--text) 0%,
-    hsla(0 0% 100% / var(--active, 0)) 120%
-  );
-  background-clip: text;
-
-  font-size: 1rem;
-  color: var(--text);
-}
-/*   background-image: linear-gradient( */
-/*     90deg, */
-/*     var(--text) 0%, */
-/*     hsla(0 0% 100% / var(--active, 0)) 120% */
-/*   ); */
-/*   background-clip: text; */
-/**/
-/*   font-size: 1rem; */
-/*   color: transparent; */
-/* } */
-/**/
 
 /* -------------------------------------------------------- */
 /* -------------------------------------------------------- */
