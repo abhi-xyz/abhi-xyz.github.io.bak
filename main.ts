@@ -27,5 +27,7 @@ async function handler(request: Request): Promise<Response> {
 
 // Start the server
 console.log("Server is running on http://localhost:8000");
-serve(handler, { port: 8003 });
+
+serve(handler);
+
 
